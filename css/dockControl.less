@@ -1,7 +1,46 @@
 .dock-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.dock-panel {
+    position: absolute;
+
+    &.horizontal{
+        width: 200px;
+        &.left {
+            left: 0;
+            top: 0;
+            bottom: 0;
+        }
+        &.right {
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    &.vertical{
+        height: 200px;
+
+        &.top {
+            left: 0;
+            right: 0;
+            top: 0;
+        }
+        &.bottom {
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .panel-header {
+
+    }
+    .panel-content {
+
+    }
 }

@@ -5,3 +5,32 @@
   right: 0;
   bottom: 0;
 }
+.dock-panel {
+  position: absolute;
+}
+.dock-panel.horizontal {
+  width: 200px;
+}
+.dock-panel.horizontal.left {
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.dock-panel.horizontal.right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.dock-panel.vertical {
+  height: 200px;
+}
+.dock-panel.vertical.top {
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.dock-panel.vertical.bottom {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
