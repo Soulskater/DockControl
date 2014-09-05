@@ -11,6 +11,8 @@ angular.module('DockControl')
             scope: {
                 size: '=',
                 minSize: '=',
+                docked: '=',
+                index: '@',
                 orientation: '@'
             },
             templateUrl: 'templates/panel.tmpl.html',

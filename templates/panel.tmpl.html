@@ -1,3 +1,4 @@
-<div class="dock-panel {{align}} {{orientation}}" ng-style="setStyle()" min-width="size" min-height="size"
-     ng-transclude>
+<div class="dock-panel {{align}} {{orientation}}" ng-style="setStyle()" min-width="size" min-height="size">
+    <div class="absolute fill" ng-transclude></div>
+    <div ng-mousedown="startDrag()" class="splitter {{align}} {{orientation}}"></div>
 </div>

@@ -7,35 +7,52 @@ angular.module('DockControl')
             $scope.panels.push(panel);
         };
         this.panelDockedChanged = function (panel) {
-            switch (panel.align) {
-                case $align.horizontal:
-                    for (var i = 0; i < $scope.panels.length; i++) {
-                        var nearPanel = $scope.panels[i];
-                        if (!nearPanel.docked && nearPanel.align === $align.vertical) {
-                            if (panel.orientation === $orientation.left) {
-                                nearPanel.start = panel.docked ? panel.size : 0;
-                            }
-                            else{
-                                nearPanel.end = panel.docked ? panel.size : 0;
-                            }
-                        }
-                    }
-                    break;
-                case $align.vertical:
-                    for (var j = 0; j < $scope.panels.length; j++) {
-                        var nearPanel1 = $scope.panels[j];
-                        if (!nearPanel1.docked && nearPanel1.align === $align.vertical) {
-                            if (panel.orientation === $orientation.top) {
-                                nearPanel1.start = panel.docked ? panel.size : 0;
-                            }
-                            else{
-                                nearPanel1.end = panel.docked ? panel.size : 0;
-                            }
-                        }
-                    }
-                    break;
+            if (panel.docked) {
+                panel.start = 0;
+                panel.end = 0;
             }
+            linq($scope.panels).forEach(function (item) {
+                _setSize(item);
+            });
         };
+        function _setSize(refPanel) {
+            linq($scope.panels).forEach(function (panel) {
+                if ((!panel.docked || (panel.docked && panel.index < refPanel.index)) && panel.align !== refPanel.align) {
+                    if (refPanel.orientation === $orientation.left || refPanel.orientation === $orientation.top) {
+                        panel.start = refPanel.docked ? refPanel.size : 0;
+                    }
+                    else {
+                        panel.end = refPanel.docked ? refPanel.size : 0;
+                    }
+                }
+            });
+        }
 
         $scope.panels = [];
+        $scope.drag = function (event) {
+            var panel = linq($scope.panels).firstOrDefault(function (item) {
+                return item.dragging;
+            });
+            if (!panel) {
+                return;
+            }
+            switch (panel.align) {
+                case $align.horizontal:
+                    panel.size = panel.orientation === $orientation.left ? event.clientX : $(event.currentTarget).width() - event.clientX - $scope.offset.left;
+                    break;
+                case $align.vertical:
+                    panel.size = panel.orientation === $orientation.top ? event.clientY : $(event.currentTarget).height() - event.clientY - $scope.offset.top;
+                    break;
+            }
+            linq($scope.panels)
+                .forEach(function (item) {
+                    _setSize(item);
+                });
+        };
+
+        $scope.endDrag = function () {
+            linq($scope.panels).forEach(function (item) {
+                item.dragging = false;
+            });
+        };
     }]);

@@ -11,9 +11,14 @@ angular.module('DockControl')
         $scope.$align = $align;
         $scope.$orientation = $orientation;
         $scope.docked = false;
+        $scope.dragging = false;
         $scope.align = $scope.orientation === $orientation.left || $scope.orientation === $orientation.right ? $align.horizontal : $align.vertical;
         $scope.start = 0;
         $scope.end = 0;
+
+        $scope.startDrag = function () {
+            $scope.dragging = true;
+        };
 
         $scope.setStyle = function () {
             return{

@@ -1,5 +1,8 @@
 .dock-control {
     position: absolute;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
     top: 0;
     left: 0;
     right: 0;
@@ -8,8 +11,7 @@
 
 .dock-panel {
     position: absolute;
-
-    &.horizontal{
+    &.horizontal {
         width: 200px;
         &.left {
             left: 0;
@@ -22,7 +24,7 @@
             bottom: 0;
         }
     }
-    &.vertical{
+    &.vertical {
         height: 200px;
 
         &.top {
@@ -41,6 +43,55 @@
 
     }
     .panel-content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:30px;
+        bottom: 0;
 
+    }
+
+    .splitter {
+        position: absolute;
+        background: #555555;
+        &.horizontal {
+            width: 5px;
+            cursor: w-resize;
+            &.left {
+                right: 0;
+                top: 0;
+                bottom: 0;
+            }
+            &.right {
+                left: 0;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        &.vertical {
+            height: 5px;
+            cursor: n-resize;
+            &.top {
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+            &.bottom {
+                left: 0;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+
+}
+
+.absolute {
+    position: absolute;
+    &.fill{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
     }
 }
