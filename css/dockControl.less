@@ -11,44 +11,80 @@
 
 .dock-panel {
     position: absolute;
+    overflow: hidden;
+
     &.horizontal {
         width: 200px;
+        &.collapsed {
+            width: 30px !important;
+        }
         &.left {
             left: 0;
             top: 0;
             bottom: 0;
+
+            .panel-wrapper {
+                right: 5px;
+            }
         }
         &.right {
             right: 0;
             top: 0;
             bottom: 0;
+
+            .panel-wrapper {
+                left: 5px;
+            }
         }
     }
     &.vertical {
         height: 200px;
 
+        &.collapsed {
+            height: 30px !important;
+        }
         &.top {
             left: 0;
             right: 0;
             top: 0;
+            .panel-wrapper {
+                bottom: 5px;
+            }
         }
         &.bottom {
             left: 0;
             right: 0;
             bottom: 0;
+
+            .panel-wrapper {
+                top: 5px;
+            }
         }
     }
 
-    .panel-header {
-
-    }
-    .panel-content {
+    .panel-wrapper {
         position: absolute;
         left: 0;
         right: 0;
-        top:30px;
+        top: 0;
         bottom: 0;
 
+        .panel-header {
+            background: #007abc;
+            position: absolute;
+            left: 0;
+            right: 0;
+            height: 25px;
+            line-height: 25px;
+            color: white;
+
+            .pinned {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                writing-mode: tb-rl;
+            }
+        }
     }
 
     .splitter {
@@ -83,15 +119,19 @@
             }
         }
     }
-
 }
 
 .absolute {
     position: absolute;
-    &.fill{
+    &.fill {
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
     }
+}
+
+.icon {
+    padding: 5px;
+    font-size: 12px;
 }

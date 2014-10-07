@@ -11,13 +11,14 @@ angular.module('DockControl')
             scope: {
                 size: '=',
                 minSize: '=',
-                docked: '=',
                 index: '@',
+                docked: '=',
                 orientation: '@'
             },
             templateUrl: 'templates/panel.tmpl.html',
             controller: 'PanelCtrl',
             link: function ($scope, element, attrs, dockCtrl) {
+                //$scope.size = parseFloat($scope.size);
                 //
                 //Add panel to the dock
                 dockCtrl.addPanel($scope);
@@ -38,8 +39,13 @@ angular.module('DockControl')
             require: '^panel',
             templateUrl: 'templates/header.tmpl.html',
             link: function ($scope, element, attrs, panelCtrl) {
+                $scope.docked = false;
                 $scope.toggleDock = function () {
                     panelCtrl.toggleDock();
+                    $scope.docked = !$scope.docked;
+                };
+                $scope.toggleCollapse = function () {
+                    panelCtrl.toggleCollapse();
                 };
             }
         };

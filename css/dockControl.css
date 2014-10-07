@@ -10,39 +10,73 @@
 }
 .dock-panel {
   position: absolute;
+  overflow: hidden;
 }
 .dock-panel.horizontal {
   width: 200px;
+}
+.dock-panel.horizontal.collapsed {
+  width: 30px !important;
 }
 .dock-panel.horizontal.left {
   left: 0;
   top: 0;
   bottom: 0;
 }
+.dock-panel.horizontal.left .panel-wrapper {
+  right: 5px;
+}
 .dock-panel.horizontal.right {
   right: 0;
   top: 0;
   bottom: 0;
 }
+.dock-panel.horizontal.right .panel-wrapper {
+  left: 5px;
+}
 .dock-panel.vertical {
   height: 200px;
+}
+.dock-panel.vertical.collapsed {
+  height: 30px !important;
 }
 .dock-panel.vertical.top {
   left: 0;
   right: 0;
   top: 0;
 }
+.dock-panel.vertical.top .panel-wrapper {
+  bottom: 5px;
+}
 .dock-panel.vertical.bottom {
   left: 0;
   right: 0;
   bottom: 0;
 }
-.dock-panel .panel-content {
+.dock-panel.vertical.bottom .panel-wrapper {
+  top: 5px;
+}
+.dock-panel .panel-wrapper {
   position: absolute;
   left: 0;
   right: 0;
-  top: 30px;
+  top: 0;
   bottom: 0;
+}
+.dock-panel .panel-wrapper .panel-header {
+  background: #007abc;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 25px;
+  line-height: 25px;
+  color: white;
+}
+.dock-panel .panel-wrapper .panel-header .pinned {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  writing-mode: tb-rl;
 }
 .dock-panel .splitter {
   position: absolute;
@@ -84,4 +118,8 @@
   right: 0;
   top: 0;
   bottom: 0;
+}
+.icon {
+  padding: 5px;
+  font-size: 12px;
 }
