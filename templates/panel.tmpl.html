@@ -1,4 +1,9 @@
-<div class="dock-panel {{align}} {{orientation}}" ng-style="setStyle()" ng-class="{ collapsed: collapsed }" min-width="size" min-height="size">
+<div class="dock-panel {{align}} {{orientation}}" ng-style="setStyle()"
+     ng-class="{ collapsed: collapsed }"
+     min-width="size"
+     min-height="size"
+     element-leave="panelLeave($event)" active="active"
+     ng-click="panelExpand($event)">
     <div class="panel-wrapper" ng-transclude></div>
     <div ng-mousedown="startDrag()" class="splitter {{align}} {{orientation}}"></div>
 </div>

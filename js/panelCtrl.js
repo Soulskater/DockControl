@@ -27,6 +27,16 @@ angular.module('DockControl')
             $scope.dragging = true;
         };
 
+        $scope.panelExpand = function ($event) {
+            $scope.collapsed = false;
+        };
+
+        $scope.panelLeave = function ($event) {
+            if (!$scope.docked) {
+                $scope.collapsed = true;
+            }
+        };
+
         $scope.setStyle = function () {
             return{
                 width: $scope.align === $align.horizontal ? $scope.size : '',
