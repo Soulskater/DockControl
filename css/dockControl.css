@@ -8,6 +8,15 @@
   right: 0;
   bottom: 0;
 }
+.dock-bar {
+  position: absolute;
+}
+.dock-bar .left {
+  width: 25px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
 .dock-panel {
   position: absolute;
   overflow: hidden;
