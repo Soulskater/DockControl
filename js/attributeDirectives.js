@@ -33,13 +33,14 @@ angular.module('Attribute.Directives', [])
                         $scope.$eval(attrs.elementLeave, { $event: event });
                     });
                     active = false;
+                    $(document).unbind('click', domClickHandler);
                 };
                 var elementClickHandler = function ($event) {
                     active = true;
+                    $(document).click(domClickHandler);
                     $event.stopPropagation();
                 };
                 element.click(elementClickHandler);
-                $(document).click(domClickHandler);
 
                 //
                 //Disposing
