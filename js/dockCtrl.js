@@ -38,10 +38,10 @@ angular.module('DockControl')
             }
             switch (panel.align) {
                 case $align.horizontal:
-                    panel.size = panel.orientation === $orientation.left ? event.clientX : $(event.currentTarget).width() - event.clientX - $scope.offset.left;
+                    panel.size = panel.orientation === $orientation.left ? event.clientX - $scope.offset.left + 5 : $(event.currentTarget).width() - event.clientX - $scope.offset.left + 5;
                     break;
                 case $align.vertical:
-                    panel.size = panel.orientation === $orientation.top ? event.clientY : $(event.currentTarget).height() - event.clientY - $scope.offset.top;
+                    panel.size = panel.orientation === $orientation.top ? event.clientY - $scope.offset.left : $(event.currentTarget).height() - event.clientY - $scope.offset.left;
                     break;
             }
             linq($scope.panels)

@@ -20,7 +20,7 @@ angular.module('DockControl', ['Attribute.Directives'])
             templateUrl: 'templates/dock.tmpl.html',
             controller: 'DockCtrl',
             link: function ($scope, element, attrs) {
-                $scope.offset = _absoluteOffset(element);
+                $scope.offset = _absoluteOffset($('.panel-container'));
 
                 function _absoluteOffset(element) {
                     var top = 0, left = 0;

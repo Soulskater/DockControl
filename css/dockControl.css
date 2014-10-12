@@ -1,4 +1,9 @@
+@font-face {
+  font-family: metro-ui;
+  src: url(../fonts/weblysleekuil.ttf);
+}
 .dock-control {
+  font-family: metro-ui;
   position: absolute;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -7,21 +12,48 @@
   left: 0;
   right: 0;
   bottom: 0;
+  background: #4C4C58;
+}
+.panel-container {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  border-left: 1px solid #5A5B5C;
+  border-right: 1px solid #5A5B5C;
+  border-bottom: 1px solid #5A5B5C;
 }
 .dock-bar {
   position: absolute;
+  background: #3f3f46;
+  z-index: 1;
 }
-.dock-bar .left {
-  width: 25px;
+.dock-bar.left {
+  width: 20px;
   left: 0;
+  top: 0;
+  bottom: 0;
+}
+.dock-bar.bottom {
+  height: 20px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.dock-bar.right {
+  width: 20px;
+  right: 0;
   top: 0;
   bottom: 0;
 }
 .dock-panel {
   position: absolute;
   overflow: hidden;
+  background: #3b3b42;
 }
 .dock-panel.horizontal {
+  min-width: 50px;
   width: 200px;
 }
 .dock-panel.horizontal.collapsed {
@@ -33,7 +65,7 @@
   bottom: 0;
 }
 .dock-panel.horizontal.left .panel-wrapper {
-  right: 5px;
+  right: 3px;
 }
 .dock-panel.horizontal.right {
   right: 0;
@@ -41,10 +73,11 @@
   bottom: 0;
 }
 .dock-panel.horizontal.right .panel-wrapper {
-  left: 5px;
+  left: 3px;
 }
 .dock-panel.vertical {
   height: 200px;
+  min-height: 50px;
 }
 .dock-panel.vertical.collapsed {
   height: 30px !important;
@@ -55,7 +88,7 @@
   top: 0;
 }
 .dock-panel.vertical.top .panel-wrapper {
-  bottom: 5px;
+  bottom: 3px;
 }
 .dock-panel.vertical.bottom {
   left: 0;
@@ -63,7 +96,7 @@
   bottom: 0;
 }
 .dock-panel.vertical.bottom .panel-wrapper {
-  top: 5px;
+  top: 3px;
 }
 .dock-panel .panel-wrapper {
   position: absolute;
@@ -73,13 +106,18 @@
   bottom: 0;
 }
 .dock-panel .panel-wrapper .panel-header {
-  background: #007abc;
+  color: #ffffff;
+  padding: 1px 5px 1px 5px;
+  border-bottom: 1px solid #007acb;
   position: absolute;
   left: 0;
   right: 0;
   height: 25px;
   line-height: 25px;
   color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .dock-panel .panel-wrapper .panel-header .pinned {
   -webkit-transform: rotate(-45deg);
@@ -89,11 +127,13 @@
 }
 .dock-panel .splitter {
   position: absolute;
-  background: #555555;
+  background: #5A5B5C;
 }
 .dock-panel .splitter.horizontal {
-  width: 5px;
+  width: 3px;
   cursor: w-resize;
+  border-left: 1px solid #3b3b42;
+  border-right: 1px solid #3b3b42;
 }
 .dock-panel .splitter.horizontal.left {
   right: 0;
@@ -106,8 +146,10 @@
   bottom: 0;
 }
 .dock-panel .splitter.vertical {
-  height: 5px;
+  height: 3px;
   cursor: n-resize;
+  border-top: 1px solid #3b3b42;
+  border-bottom: 1px solid #3b3b42;
 }
 .dock-panel .splitter.vertical.top {
   left: 0;
@@ -129,6 +171,6 @@
   bottom: 0;
 }
 .icon {
-  padding: 5px;
-  font-size: 12px;
+  padding: 6px 0px;
+  font-size: 8px;
 }
