@@ -57,7 +57,8 @@
   width: 200px;
 }
 .dock-panel.horizontal.collapsed {
-  width: 30px !important;
+  width: 0px !important;
+  min-width: 0px !important;
 }
 .dock-panel.horizontal.left {
   left: 0;
@@ -80,7 +81,7 @@
   min-height: 50px;
 }
 .dock-panel.vertical.collapsed {
-  height: 30px !important;
+  height: 0px !important;
 }
 .dock-panel.vertical.top {
   left: 0;

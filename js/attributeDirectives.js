@@ -2,6 +2,24 @@
  * Created by gmeszaros on 9/5/2014.
  */
 angular.module('Attribute.Directives', [])
+    .directive('width', [function () {
+        return {
+            restrict: 'A',
+            replace: true,
+            link: function (scope, element, attrs) {
+                element.css({width: attrs.width});
+            }
+        };
+    }])
+    .directive('height', [function () {
+        return {
+            restrict: 'A',
+            replace: true,
+            link: function (scope, element, attrs) {
+                element.css({height: attrs.height});
+            }
+        };
+    }])
     .directive('minWidth', [function () {
         return {
             restrict: 'A',
