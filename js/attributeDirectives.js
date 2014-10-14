@@ -45,7 +45,7 @@ angular.module('Attribute.Directives', [])
             link: function ($scope, element, attrs) {
                 var active = false;
                 var domClickHandler = function (event) {
-                    if(!active && $(event.target).parents(element).length >= 0)
+                    if(event.target === element[0] || $(event.target).parent()[0] === element[0])
                         return;
                     $scope.$apply(function () {
                         $scope.$eval(attrs.elementLeave, { $event: event });
@@ -56,7 +56,7 @@ angular.module('Attribute.Directives', [])
                 var elementClickHandler = function ($event) {
                     active = true;
                     $(document).click(domClickHandler);
-                    $event.stopPropagation();
+                    //$event.stopPropagation();
                 };
                 element.click(elementClickHandler);
 
