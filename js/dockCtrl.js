@@ -28,6 +28,7 @@ angular.module('DockControl')
             });
         }
 
+        $scope.$orientation = $orientation;
         $scope.panels = [];
         $scope.drag = function (event) {
             var panel = linq($scope.panels).firstOrDefault(function (item) {

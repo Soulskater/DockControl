@@ -17,9 +17,9 @@
 .panel-container {
   position: absolute;
   top: 0;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
+  left: 25px;
+  right: 25px;
+  bottom: 25px;
   border-left: 1px solid #5A5B5C;
   border-right: 1px solid #5A5B5C;
   border-bottom: 1px solid #5A5B5C;
@@ -29,23 +29,60 @@
   background: #3f3f46;
   z-index: 1;
 }
+.dock-bar .dock-bar-item {
+  color: #ffffff;
+  overflow: visible;
+  white-space: nowrap;
+}
 .dock-bar.left {
-  width: 20px;
+  width: 25px;
   left: 0;
   top: 0;
   bottom: 0;
 }
+.dock-bar.left .dock-bar-item {
+  ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+.dock-bar.left .dock-bar-item span {
+  cursor: pointer;
+  border-bottom: 2px solid #787885;
+}
+.dock-bar.left .dock-bar-item span:hover {
+  border-bottom: 2px solid #007acb;
+}
 .dock-bar.bottom {
-  height: 20px;
+  height: 25px;
   left: 0;
   right: 0;
   bottom: 0;
 }
 .dock-bar.right {
-  width: 20px;
+  width: 25px;
   right: 0;
   top: 0;
   bottom: 0;
+}
+.dock-bar.right .dock-bar-item {
+  ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(90deg);
+  padding-left: 15px;
+  padding-bottom: 4px;
+}
+.dock-bar.right .dock-bar-item span {
+  cursor: pointer;
+  border-bottom: 2px solid #787885;
+}
+.dock-bar.right .dock-bar-item span:hover {
+  border-bottom: 2px solid #007acb;
 }
 .dock-panel {
   position: absolute;
@@ -173,5 +210,5 @@
 }
 .icon {
   padding: 6px 0px;
-  font-size: 8px;
+  font-size: 9px;
 }

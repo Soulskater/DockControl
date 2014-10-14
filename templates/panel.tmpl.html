@@ -5,5 +5,6 @@
      element-leave="panelLeave($event)" active="active"
      ng-click="panelExpand($event)">
     <div class="panel-wrapper" ng-transclude></div>
+    <div style="position: absolute; top:20px;color:white;" ng-click="orientation = $orientation.left">dock left</div>
     <div ng-mousedown="startDrag()" class="splitter {{align}} {{orientation}}"></div>
 </div>

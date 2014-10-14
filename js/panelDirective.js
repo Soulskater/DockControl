@@ -47,6 +47,7 @@ angular.module('DockControl')
                 $scope.toggleCollapse = function () {
                     panelCtrl.toggleCollapse();
                 };
+                panelCtrl.setHeader(element.text());
             }
         };
     }])
