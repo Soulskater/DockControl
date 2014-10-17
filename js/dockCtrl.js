@@ -15,6 +15,13 @@ angular.module('DockControl')
                 _setSize(item);
             });
         };
+        this.panelCollapseChanged = function (panel) {
+            linq($scope.panels).forEach(function (item) {
+                if (item !== panel && item.orientation === panel.orientation) {
+                    item.collapsed = true;
+                }
+            });
+        };
         function _setSize(refPanel) {
             linq($scope.panels).forEach(function (panel) {
                 if ((!panel.docked || (panel.docked && panel.index < refPanel.index)) && panel.align !== refPanel.align) {

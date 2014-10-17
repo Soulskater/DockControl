@@ -17,9 +17,9 @@
 .panel-container {
   position: absolute;
   top: 0;
-  left: 25px;
-  right: 25px;
-  bottom: 25px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
   border-left: 1px solid #5A5B5C;
   border-right: 1px solid #5A5B5C;
   border-bottom: 1px solid #5A5B5C;
@@ -29,18 +29,21 @@
   background: #3f3f46;
   z-index: 1;
 }
-.dock-bar .dock-bar-item {
+.dock-bar .dock-bar-items {
   color: #ffffff;
   overflow: visible;
   white-space: nowrap;
 }
+.dock-bar .dock-bar-items span {
+  margin-right: 15px;
+}
 .dock-bar.left {
-  width: 25px;
+  width: 30px;
   left: 0;
   top: 0;
   bottom: 0;
 }
-.dock-bar.left .dock-bar-item {
+.dock-bar.left .dock-bar-items {
   ms-transform: rotate(90deg);
   /* IE 9 */
   -webkit-transform: rotate(90deg);
@@ -49,40 +52,50 @@
   padding-left: 15px;
   padding-bottom: 4px;
 }
-.dock-bar.left .dock-bar-item span {
+.dock-bar.left .dock-bar-items span {
   cursor: pointer;
-  border-bottom: 2px solid #787885;
+  border-bottom: 3px solid #787885;
 }
-.dock-bar.left .dock-bar-item span:hover {
-  border-bottom: 2px solid #007acb;
+.dock-bar.left .dock-bar-items span:hover {
+  border-bottom: 3px solid #007acb;
 }
 .dock-bar.bottom {
-  height: 25px;
-  left: 0;
+  height: 30px;
+  left: 30px;
   right: 0;
   bottom: 0;
 }
+.dock-bar.bottom .dock-bar-items {
+  padding-bottom: 5px;
+}
+.dock-bar.bottom .dock-bar-items span {
+  cursor: pointer;
+  border-bottom: 3px solid #787885;
+}
+.dock-bar.bottom .dock-bar-items span:hover {
+  border-bottom: 3px solid #007acb;
+}
 .dock-bar.right {
-  width: 25px;
+  width: 30px;
   right: 0;
   top: 0;
   bottom: 0;
 }
-.dock-bar.right .dock-bar-item {
+.dock-bar.right .dock-bar-items {
   ms-transform: rotate(90deg);
   /* IE 9 */
   -webkit-transform: rotate(90deg);
   /* Chrome, Safari, Opera */
   transform: rotate(90deg);
   padding-left: 15px;
-  padding-bottom: 4px;
+  padding-top: 7px;
 }
-.dock-bar.right .dock-bar-item span {
+.dock-bar.right .dock-bar-items span {
   cursor: pointer;
-  border-bottom: 2px solid #787885;
+  border-top: 3px solid #787885;
 }
-.dock-bar.right .dock-bar-item span:hover {
-  border-bottom: 2px solid #007acb;
+.dock-bar.right .dock-bar-items span:hover {
+  border-top: 3px solid #007acb;
 }
 .dock-panel {
   position: absolute;
@@ -119,6 +132,7 @@
 }
 .dock-panel.vertical.collapsed {
   height: 0px !important;
+  min-height: 0px !important;
 }
 .dock-panel.vertical.top {
   left: 0;

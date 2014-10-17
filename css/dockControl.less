@@ -19,13 +19,13 @@
     bottom: 0;
     background: #4C4C58;
 }
-
+@dock-bar-size: 30px;
 .panel-container {
     position: absolute;
     top: 0;
-    left: 25px;
-    right: 25px;
-    bottom: 25px;
+    left: @dock-bar-size;
+    right: @dock-bar-size;
+    bottom: @dock-bar-size;
     border-left: 1px solid #5A5B5C;
     border-right: 1px solid #5A5B5C;
     border-bottom: 1px solid #5A5B5C;
@@ -35,17 +35,20 @@
     position: absolute;
     background: @dark-grey;
     z-index: 1;
-    .dock-bar-item{
+    .dock-bar-items{
         color: #ffffff;
         overflow: visible;
         white-space: nowrap;
+        span{
+            margin-right: 15px;
+        }
     }
     &.left {
-        width: 25px;
+        width: @dock-bar-size;
         left: 0;
         top: 0;
         bottom: 0;
-        .dock-bar-item{
+        .dock-bar-items{
             ms-transform: rotate(90deg); /* IE 9 */
             -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
             transform: rotate(90deg);
@@ -53,36 +56,46 @@
             padding-bottom: 4px;
             span {
                 &:hover{
-                    border-bottom: 2px solid @dark-blue;
+                    border-bottom: 3px solid @dark-blue;
                 }
                 cursor: pointer;
-                border-bottom: 2px solid @light-grey;
+                border-bottom: 3px solid @light-grey;
             }
         }
     }
     &.bottom {
-        height: 25px;
-        left: 0;
+        height: @dock-bar-size;
+        left: @dock-bar-size;
         right: 0;
         bottom: 0;
+        .dock-bar-items{
+            padding-bottom: 5px;
+            span {
+                &:hover{
+                    border-bottom: 3px solid @dark-blue;
+                }
+                cursor: pointer;
+                border-bottom: 3px solid @light-grey;
+            }
+        }
     }
     &.right {
-        width: 25px;
+        width: @dock-bar-size;
         right: 0;
         top: 0;
         bottom: 0;
-        .dock-bar-item{
+        .dock-bar-items{
             ms-transform: rotate(90deg); /* IE 9 */
             -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
             transform: rotate(90deg);
             padding-left: 15px;
-            padding-bottom: 4px;
+            padding-top: 7px;
             span {
                 &:hover{
-                    border-bottom: 2px solid @dark-blue;
+                    border-top: 3px solid @dark-blue;
                 }
                 cursor: pointer;
-                border-bottom: 2px solid @light-grey;
+                border-top: 3px solid @light-grey;
             }
         }
     }
@@ -124,6 +137,7 @@
         min-height: 50px;
         &.collapsed {
             height: 0px !important;
+            min-height: 0px !important;
         }
         &.top {
             left: 0;
