@@ -28,11 +28,10 @@ angular.module('DockControl')
                         dockCtrl.panelDockedChanged($scope);
                     }
                 });
-                $scope.$watch('collapsed', function (value) {
-                    if (value !== undefined) {
-                        dockCtrl.panelCollapseChanged($scope);
-                    }
-                });
+                $scope.toggleCollapse= function () {
+                    $scope.collapsed = !$scope.collapsed;
+                    dockCtrl.panelCollapseChanged($scope);
+                };
             }
         };
     }])

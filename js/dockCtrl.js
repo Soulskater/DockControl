@@ -11,9 +11,7 @@ angular.module('DockControl')
                 panel.start = 0;
                 panel.end = 0;
             }
-            linq($scope.panels).forEach(function (item) {
-                _setSize(item);
-            });
+            _setSize(panel);
         };
         this.panelCollapseChanged = function (panel) {
             linq($scope.panels).forEach(function (item) {
@@ -23,8 +21,10 @@ angular.module('DockControl')
             });
         };
         function _setSize(refPanel) {
-            linq($scope.panels).forEach(function (panel) {
-                if ((!panel.docked || (panel.docked && panel.index < refPanel.index)) && panel.align !== refPanel.align) {
+            linq($scope.panels).where(function (item) {
+                return item.align !== refPanel.align;
+            }).forEach(function (panel) {
+                if (!panel.docked || (panel.docked && panel.index < refPanel.index)) {
                     if (refPanel.orientation === $orientation.left || refPanel.orientation === $orientation.top) {
                         panel.start = refPanel.docked ? refPanel.size : 0;
                     }

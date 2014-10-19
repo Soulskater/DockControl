@@ -18,10 +18,7 @@ angular.module('DockControl')
         $scope.toggleDock= function () {
             $scope.docked = !$scope.docked;
         };
-        $scope.toggleCollapse= function () {
-            //$scope.docked = false;
-            $scope.collapsed = !$scope.collapsed;
-        };
+
         $scope.$align = $align;
         $scope.$orientation = $orientation;
         $scope.docked = false;
