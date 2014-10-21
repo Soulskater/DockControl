@@ -2,7 +2,7 @@
  * Created by gmeszaros on 8/5/2014.
  */
 angular.module('DockControl')
-    .directive('panel', [function () {
+    .directive('panel', ["pathService", function ($path) {
         return {
             restrict: 'AE',
             require: '^dock',
@@ -15,7 +15,7 @@ angular.module('DockControl')
                 docked: '=',
                 orientation: '@'
             },
-            templateUrl: 'templates/panel.tmpl.html',
+            templateUrl: $path.templatesBaseUrl + 'panel.tmpl.html',
             controller: 'PanelCtrl',
             link: function ($scope, element, attrs, dockCtrl) {
                 //$scope.size = parseFloat($scope.size);
@@ -28,20 +28,20 @@ angular.module('DockControl')
                         dockCtrl.panelDockedChanged($scope);
                     }
                 });
-                $scope.toggleCollapse= function () {
+                $scope.toggleCollapse = function () {
                     $scope.collapsed = !$scope.collapsed;
                     dockCtrl.panelCollapseChanged($scope);
                 };
             }
         };
     }])
-    .directive('header', [function () {
+    .directive('header', ["pathService", function ($path) {
         return {
             restrict: 'AE',
             replace: true,
             transclude: true,
             require: '^panel',
-            templateUrl: 'templates/header.tmpl.html',
+            templateUrl: $path.templatesBaseUrl + 'header.tmpl.html',
             link: function ($scope, element, attrs, panelCtrl) {
                 $scope.docked = false;
                 $scope.toggleDock = function () {
@@ -55,13 +55,13 @@ angular.module('DockControl')
             }
         };
     }])
-    .directive('content', [function () {
+    .directive('content', ["pathService", function ($path) {
         return {
             restrict: 'AE',
             replace: true,
             transclude: true,
             require: '^panel',
-            templateUrl: 'templates/content.tmpl.html',
+            templateUrl: $path.templatesBaseUrl + 'content.tmpl.html',
             link: function (scope, element, attrs) {
             }
         };

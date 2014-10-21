@@ -12,12 +12,12 @@ angular.module('DockControl', ['Attribute.Directives'])
         top: "top",
         bottom: "bottom"
     })
-    .directive('dock', [function () {
+    .directive('dock', ["pathService", function ($path) {
         return {
             restrict: 'AE',
             replace: true,
             transclude: true,
-            templateUrl: 'templates/dock.tmpl.html',
+            templateUrl: $path.templatesBaseUrl + 'dock.tmpl.html',
             controller: 'DockCtrl',
             link: function ($scope, element, attrs) {
                 $scope.offset = _absoluteOffset($('.panel-container'));
