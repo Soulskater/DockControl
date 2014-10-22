@@ -12,10 +12,21 @@ angular.module('DockControl')
             $scope.toggleCollapse();
         };
 
-        this.setHeader= function (header) {
+        this.setHeader = function (header) {
             $scope.header = header;
         };
-        $scope.toggleDock= function () {
+
+        function getAlign(orientation) {
+            if ($scope.orientation === $orientation.left || $scope.orientation === $orientation.right) {
+                return $align.horizontal;
+            }
+            if ($scope.orientation === $orientation.top || $scope.orientation === $orientation.bottom) {
+                return $align.vertical;
+            }
+            return $align.middle;
+        }
+
+        $scope.toggleDock = function () {
             $scope.docked = !$scope.docked;
         };
 
@@ -25,9 +36,10 @@ angular.module('DockControl')
         $scope.collapsed = false;
         $scope.dragging = false;
         $scope.header = "";
-        $scope.align = $scope.orientation === $orientation.left || $scope.orientation === $orientation.right ? $align.horizontal : $align.vertical;
-        $scope.start = 0;
-        $scope.end = 0;
+        $scope.align = getAlign($scope.orientation);
+        if ($scope.orientation === $orientation.center) {
+            $scope.align = $align.middle;
+        }
 
         $scope.startDrag = function () {
             $scope.dragging = true;
@@ -43,14 +55,21 @@ angular.module('DockControl')
             }
         };
 
+        $scope.setToDefault = function () {
+            $scope.left = '';
+            $scope.right = '';
+            $scope.top = '';
+            $scope.bottom = '';
+        };
+
         $scope.setStyle = function () {
             return{
                 width: $scope.align === $align.horizontal ? $scope.size : '',
                 height: $scope.align === $align.vertical ? $scope.size : '',
-                left: $scope.align === $align.vertical ? $scope.start : '',
-                right: $scope.align === $align.vertical ? $scope.end : '',
-                top: $scope.align === $align.horizontal ? $scope.start : '',
-                bottom: $scope.align === $align.horizontal ? $scope.end : ''
+                left: $scope.left,
+                right: $scope.right,
+                top: $scope.top,
+                bottom: $scope.bottom
             };
         };
     }]);

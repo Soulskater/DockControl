@@ -8,8 +8,7 @@ angular.module('DockControl')
         };
         this.panelDockedChanged = function (panel) {
             if (panel.docked) {
-                panel.start = 0;
-                panel.end = 0;
+                panel.setToDefault();
             }
             _setSize(panel);
         };
@@ -20,17 +19,13 @@ angular.module('DockControl')
                 }
             });
         };
+
         function _setSize(refPanel) {
             linq($scope.panels).where(function (item) {
                 return item.align !== refPanel.align;
             }).forEach(function (panel) {
                 if (!panel.docked || (panel.docked && panel.index < refPanel.index)) {
-                    if (refPanel.orientation === $orientation.left || refPanel.orientation === $orientation.top) {
-                        panel.start = refPanel.docked ? refPanel.size : 0;
-                    }
-                    else {
-                        panel.end = refPanel.docked ? refPanel.size : 0;
-                    }
+                    panel[refPanel.orientation] = refPanel.docked ? refPanel.size : 0;
                 }
             });
         }

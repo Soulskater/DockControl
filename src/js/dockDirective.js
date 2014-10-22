@@ -4,13 +4,15 @@
 angular.module('DockControl', ['Attribute.Directives'])
     .constant('$alignment', {
         horizontal: "horizontal",
-        vertical: "vertical"
+        vertical: "vertical",
+        middle: "middle"
     })
     .constant('$orientation', {
         left: "left",
         right: "right",
         top: "top",
-        bottom: "bottom"
+        bottom: "bottom",
+        center: "center"
     })
     .directive('dock', ["pathService", function ($path) {
         return {

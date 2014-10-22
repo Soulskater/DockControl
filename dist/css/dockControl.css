@@ -105,6 +105,7 @@
 .dock-panel.horizontal {
   min-width: 50px;
   width: 200px;
+  z-index: 1;
 }
 .dock-panel.horizontal.collapsed {
   width: 0px !important;
@@ -129,6 +130,7 @@
 .dock-panel.vertical {
   height: 200px;
   min-height: 50px;
+  z-index: 1;
 }
 .dock-panel.vertical.collapsed {
   height: 0px !important;
@@ -149,6 +151,13 @@
 }
 .dock-panel.vertical.bottom .panel-wrapper {
   top: 3px;
+}
+.dock-panel.center {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
 }
 .dock-panel .panel-wrapper {
   position: absolute;
