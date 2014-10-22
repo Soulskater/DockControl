@@ -1,18 +1,18 @@
 <div class="dock-control" ng-mousemove="drag($event)" ng-mouseup="endDrag()">
     <div class="dock-bar left">
-        <div class="dock-bar-items">
+        <div class="dock-bar-items font-xs">
             <span ng-repeat="panel in panels|filter:{ orientation: $orientation.left}"
                   ng-click="panel.toggleCollapse()">{{panel.header}}</span>
         </div>
     </div>
     <div class="dock-bar bottom">
-        <div class="dock-bar-items">
+        <div class="dock-bar-items font-xs">
             <span ng-repeat="panel in panels|filter:{ orientation: $orientation.bottom}"
                   ng-click="panel.toggleCollapse()">{{panel.header}}</span>
         </div>
     </div>
     <div class="dock-bar right">
-        <div class="dock-bar-items">
+        <div class="dock-bar-items font-xs">
             <span ng-repeat="panel in panels|filter:{ orientation: $orientation.right}"
                   ng-click="panel.toggleCollapse()">{{panel.header}}</span>
         </div>

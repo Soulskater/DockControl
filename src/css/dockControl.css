@@ -2,6 +2,22 @@
   font-family: metro-ui;
   src: url(../fonts/weblysleekuil.ttf);
 }
+.font-xs {
+  font-size: 14px;
+}
+.font-s {
+  font-size: 1.6rem;
+}
+.font-m {
+  font-size: 2.1rem;
+}
+.font-l {
+  font-size: 2.5rem;
+  letter-spacing: 0.01em;
+}
+.font-xl {
+  font-size: 2.8rem;
+}
 .dock-control {
   font-family: metro-ui;
   position: absolute;
@@ -168,7 +184,7 @@
 }
 .dock-panel .panel-wrapper .panel-header {
   color: #ffffff;
-  padding: 1px 5px 1px 5px;
+  padding: 0px 5px;
   border-bottom: 1px solid #007acb;
   position: absolute;
   left: 0;
