@@ -1,4 +1,4 @@
 <div class="panel-header font-xs">
-    <span ng-click="toggleDock()" class="glyphicon glyphicon-pushpin pull-right icon" ng-class="{ pinned: docked }"></span>
+    <span ng-click="toggleDock()" class="glyphicon glyphicon-pushpin pull-right icon" ng-class="{ pinned: $parent.docked }"></span>
     <span ng-transclude></span>
 </div>
