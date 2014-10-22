@@ -26,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8994709" vertical-offset="0" max-vertical-offset="884">
-              <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.575" vertical-offset="4" max-vertical-offset="901">
+              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
               <folding>
                 <element signature="n#style#0;n#panel#2;n#dock#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -68,18 +68,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dockDirective.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/dockDirective.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding>
-                <element signature="e#699#1349#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="panelCtrl.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/panelCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -113,20 +101,31 @@
       <file leaf-file-name="dockControl.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/dockControl.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.6153846" vertical-offset="1043" max-vertical-offset="2737">
-              <caret line="192" column="5" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
+            <state vertical-scroll-proportion="-23.76923" vertical-offset="997" max-vertical-offset="2737">
+              <caret line="223" column="18" selection-start-line="223" selection-start-column="18" selection-end-line="223" selection-end-column="18" />
               <folding>
-                <element signature="e#896#2703#0" expanded="false" />
-                <element signature="e#985#1128#0" expanded="false" />
-                <element signature="e#1140#1714#0" expanded="false" />
-                <element signature="e#1728#2122#0" expanded="false" />
-                <element signature="e#2135#2701#0" expanded="false" />
-                <element signature="e#2813#3320#0" expanded="false" />
-                <element signature="e#2902#2987#0" expanded="false" />
-                <element signature="e#3003#3150#0" expanded="false" />
-                <element signature="e#3167#3314#0" expanded="false" />
-                <element signature="e#3336#3846#0" expanded="false" />
+                <element signature="e#897#2712#0" expanded="false" />
+                <element signature="e#987#1131#0" expanded="false" />
+                <element signature="e#1143#1719#0" expanded="false" />
+                <element signature="e#1733#2129#0" expanded="false" />
+                <element signature="e#2142#2710#0" expanded="false" />
+                <element signature="e#2822#3329#0" expanded="false" />
+                <element signature="e#2911#2996#0" expanded="false" />
+                <element signature="e#3012#3159#0" expanded="false" />
+                <element signature="e#3176#3323#0" expanded="false" />
+                <element signature="e#3345#3855#0" expanded="false" />
+                <element signature="e#3870#4003#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="content.tmpl.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/content.tmpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="119">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,14 +173,15 @@
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/js/resourcePathService.js" />
         <option value="$PROJECT_DIR$/src/js/panelDirective.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/js/dockDirective.js" />
         <option value="$PROJECT_DIR$/src/js/dockCtrl.js" />
         <option value="$PROJECT_DIR$/src/js/panelCtrl.js" />
         <option value="$PROJECT_DIR$/bower.json" />
         <option value="$PROJECT_DIR$/src/templates/dock.tmpl.html" />
         <option value="$PROJECT_DIR$/src/templates/header.tmpl.html" />
+        <option value="$PROJECT_DIR$/src/templates/content.tmpl.html" />
         <option value="$PROJECT_DIR$/src/css/dockControl.less" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -428,7 +428,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19435737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32706374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32706374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -735,13 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/content.tmpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/packages/angular/bower.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="740">
@@ -849,25 +842,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/dockControl.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.6153846" vertical-offset="1043" max-vertical-offset="2737">
-          <caret line="192" column="5" selection-start-line="192" selection-start-column="5" selection-end-line="192" selection-end-column="5" />
-          <folding>
-            <element signature="e#896#2703#0" expanded="false" />
-            <element signature="e#985#1128#0" expanded="false" />
-            <element signature="e#1140#1714#0" expanded="false" />
-            <element signature="e#1728#2122#0" expanded="false" />
-            <element signature="e#2135#2701#0" expanded="false" />
-            <element signature="e#2813#3320#0" expanded="false" />
-            <element signature="e#2902#2987#0" expanded="false" />
-            <element signature="e#3003#3150#0" expanded="false" />
-            <element signature="e#3167#3314#0" expanded="false" />
-            <element signature="e#3336#3846#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/header.tmpl.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="153">
@@ -884,10 +858,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/content.tmpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="119">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/dockControl.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.76923" vertical-offset="997" max-vertical-offset="2737">
+          <caret line="223" column="18" selection-start-line="223" selection-start-column="18" selection-end-line="223" selection-end-column="18" />
+          <folding>
+            <element signature="e#897#2712#0" expanded="false" />
+            <element signature="e#987#1131#0" expanded="false" />
+            <element signature="e#1143#1719#0" expanded="false" />
+            <element signature="e#1733#2129#0" expanded="false" />
+            <element signature="e#2142#2710#0" expanded="false" />
+            <element signature="e#2822#3329#0" expanded="false" />
+            <element signature="e#2911#2996#0" expanded="false" />
+            <element signature="e#3012#3159#0" expanded="false" />
+            <element signature="e#3176#3323#0" expanded="false" />
+            <element signature="e#3345#3855#0" expanded="false" />
+            <element signature="e#3870#4003#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8994709" vertical-offset="0" max-vertical-offset="884">
-          <caret line="30" column="24" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.575" vertical-offset="4" max-vertical-offset="901">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
           <folding>
             <element signature="n#style#0;n#panel#2;n#dock#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

@@ -202,6 +202,13 @@
   -o-transform: rotate(-45deg);
   writing-mode: tb-rl;
 }
+.dock-panel .panel-wrapper .panel-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  bottom: 0;
+}
 .dock-panel .splitter {
   position: absolute;
   background: #5A5B5C;

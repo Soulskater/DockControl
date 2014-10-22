@@ -40,6 +40,7 @@
     bottom: 0;
     background: #4C4C58;
 }
+
 @dock-bar-size: 30px;
 .panel-container {
     position: absolute;
@@ -56,11 +57,11 @@
     position: absolute;
     background: @dark-grey;
     z-index: 1;
-    .dock-bar-items{
+    .dock-bar-items {
         color: #ffffff;
         overflow: visible;
         white-space: nowrap;
-        span{
+        span {
             margin-right: 15px;
         }
     }
@@ -69,14 +70,14 @@
         left: 0;
         top: 0;
         bottom: 0;
-        .dock-bar-items{
+        .dock-bar-items {
             ms-transform: rotate(90deg); /* IE 9 */
             -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
             transform: rotate(90deg);
             padding-left: 15px;
             padding-bottom: 4px;
             span {
-                &:hover{
+                &:hover {
                     border-bottom: 3px solid @dark-blue;
                 }
                 cursor: pointer;
@@ -89,10 +90,10 @@
         left: @dock-bar-size;
         right: 0;
         bottom: 0;
-        .dock-bar-items{
+        .dock-bar-items {
             padding-bottom: 5px;
             span {
-                &:hover{
+                &:hover {
                     border-bottom: 3px solid @dark-blue;
                 }
                 cursor: pointer;
@@ -105,14 +106,14 @@
         right: 0;
         top: 0;
         bottom: 0;
-        .dock-bar-items{
+        .dock-bar-items {
             ms-transform: rotate(90deg); /* IE 9 */
             -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
             transform: rotate(90deg);
             padding-left: 15px;
             padding-top: 7px;
             span {
-                &:hover{
+                &:hover {
                     border-top: 3px solid @dark-blue;
                 }
                 cursor: pointer;
@@ -218,6 +219,14 @@
                 -o-transform: rotate(-45deg);
                 writing-mode: tb-rl;
             }
+        }
+
+        .panel-content {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 25px;
+            bottom: 0;
         }
     }
 
