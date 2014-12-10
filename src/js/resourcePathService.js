@@ -3,11 +3,11 @@
  */
 var scripts = document.getElementsByTagName("script");
 var currentScriptPath = scripts[scripts.length - 1].src;
-var rootPath = currentScriptPath.split("js/")[0];
+var dockControlRootPath = currentScriptPath.split("js/")[0];
 
 angular.module('DockControl')
     .service("pathService", [ function () {
         return{
-            templatesBaseUrl: rootPath + "templates/"
+            templatesBaseUrl: dockControlRootPath + "templates/"
         };
     }]);
