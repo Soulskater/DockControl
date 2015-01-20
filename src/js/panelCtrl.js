@@ -16,6 +16,10 @@ angular.module('DockControl')
             $scope.header = header;
         };
 
+        this.hasHeader = function () {
+            return $scope.header !== "";
+        };
+
         function getAlign(orientation) {
             if ($scope.orientation === $orientation.left || $scope.orientation === $orientation.right) {
                 return $align.horizontal;
@@ -63,7 +67,7 @@ angular.module('DockControl')
         };
 
         $scope.setStyle = function () {
-            return{
+            return {
                 width: $scope.align === $align.horizontal ? $scope.size : '',
                 height: $scope.align === $align.vertical ? $scope.size : '',
                 left: $scope.left,

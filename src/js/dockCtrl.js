@@ -13,11 +13,11 @@ angular.module('DockControl')
             _setSize(panel);
         };
         this.panelCollapseChanged = function (panel) {
-            linq($scope.panels).forEach(function (item) {
+            /*linq($scope.panels).forEach(function (item) {
                 if (item !== panel && item.orientation === panel.orientation) {
                     item.collapsed = true;
                 }
-            });
+            });*/
         };
 
         function _setSize(refPanel) {
