@@ -2,7 +2,7 @@
  * Created by gmeszaros on 8/5/2014.
  */
 angular.module('DockControl')
-    .directive('panel', ["pathService", function ($path) {
+    .directive('panel', ["DockControl.PathService", function ($path) {
         return {
             restrict: 'AE',
             require: '^dock',
@@ -39,7 +39,7 @@ angular.module('DockControl')
             }
         };
     }])
-    .directive('header', ["pathService", function ($path) {
+    .directive('header', ["DockControl.PathService", function ($path) {
         return {
             restrict: 'AE',
             replace: true,
@@ -59,7 +59,7 @@ angular.module('DockControl')
             }
         };
     }])
-    .directive('content', ["pathService", function ($path) {
+    .directive('content', ["DockControl.PathService", function ($path) {
         return {
             restrict: 'AE',
             replace: true,

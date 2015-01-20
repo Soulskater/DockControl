@@ -6,7 +6,7 @@ var currentScriptPath = scripts[scripts.length - 1].src;
 var dockControlRootPath = currentScriptPath.split("js/")[0];
 
 angular.module('DockControl')
-    .service("pathService", [ function () {
+    .service("DockControl.PathService", [ function () {
         return{
             templatesBaseUrl: dockControlRootPath + "templates/"
         };

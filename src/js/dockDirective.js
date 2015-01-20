@@ -14,7 +14,7 @@ angular.module('DockControl', ['Attribute.Directives'])
         bottom: "bottom",
         center: "center"
     })
-    .directive('dock', ["pathService", function ($path) {
+    .directive('dock', ["DockControl.PathService", function ($path) {
         return {
             restrict: 'AE',
             replace: true,
