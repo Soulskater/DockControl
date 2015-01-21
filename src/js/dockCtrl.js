@@ -28,6 +28,7 @@ angular.module('DockControl')
                     panel[refPanel.orientation] = refPanel.docked ? refPanel.size : 0;
                 }
             });
+            $scope.sizeChanged = !$scope.sizeChanged;
         }
 
         $scope.$orientation = $orientation;
