@@ -8,16 +8,22 @@ angular.module('DockControl')
         };
         this.panelDockedChanged = function (panel) {
             if (panel.docked) {
+                linq($scope.panels).where(function (item) {
+                    return item !== panel && item.orientation === panel.orientation;
+                }).forEach(function (p) {
+                    p.docked = false;
+                    p.collapsed = true;
+                });
                 panel.setToDefault();
             }
             _setSize(panel);
         };
         this.panelCollapseChanged = function (panel) {
             /*linq($scope.panels).forEach(function (item) {
-                if (item !== panel && item.orientation === panel.orientation) {
-                    item.collapsed = true;
-                }
-            });*/
+             if (item !== panel && item.orientation === panel.orientation) {
+             item.collapsed = true;
+             }
+             });*/
         };
 
         function _setSize(refPanel) {

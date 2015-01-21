@@ -21,7 +21,6 @@ angular.module('DockControl', ['Attribute.Directives'])
             transclude: true,
             templateUrl: $path.templatesBaseUrl + 'dock.tmpl.html',
             scope: {
-                sizeChanged: '='
             },
             controller: 'DockCtrl',
             link: function ($scope, element, attrs) {

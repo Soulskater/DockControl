@@ -4,22 +4,6 @@
 angular.module('DockControl')
     .controller('PanelCtrl', ['$scope', '$alignment', '$orientation', function ($scope, $align, $orientation) {
 
-        this.toggleDock = function () {
-            $scope.toggleDock();
-        };
-
-        this.toggleCollapse = function () {
-            $scope.toggleCollapse();
-        };
-
-        this.setHeader = function (header) {
-            $scope.header = header;
-        };
-
-        this.hasHeader = function () {
-            return $scope.header !== "";
-        };
-
         function getAlign(orientation) {
             if ($scope.orientation === $orientation.left || $scope.orientation === $orientation.right) {
                 return $align.horizontal;
@@ -29,10 +13,6 @@ angular.module('DockControl')
             }
             return $align.middle;
         }
-
-        $scope.toggleDock = function () {
-            $scope.docked = !$scope.docked;
-        };
 
         $scope.$align = $align;
         $scope.$orientation = $orientation;
