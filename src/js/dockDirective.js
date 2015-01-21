@@ -20,6 +20,9 @@ angular.module('DockControl', ['Attribute.Directives'])
             replace: true,
             transclude: true,
             templateUrl: $path.templatesBaseUrl + 'dock.tmpl.html',
+            scope: {
+                sizeChanged: '='
+            },
             controller: 'DockCtrl',
             link: function ($scope, element, attrs) {
                 $scope.offset = _absoluteOffset($('.panel-container'));
