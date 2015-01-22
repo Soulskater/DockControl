@@ -56,23 +56,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dockControl.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dockControl.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/dockControl.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.73077" vertical-offset="893" max-vertical-offset="2720">
-              <caret line="226" column="21" selection-start-line="226" selection-start-column="21" selection-end-line="226" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.4755245" vertical-offset="0" max-vertical-offset="3247">
+              <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
-                <element signature="e#897#2712#0" expanded="false" />
-                <element signature="e#987#1131#0" expanded="false" />
-                <element signature="e#1143#1719#0" expanded="false" />
-                <element signature="e#1733#2129#0" expanded="false" />
-                <element signature="e#2142#2710#0" expanded="false" />
-                <element signature="e#2822#3329#0" expanded="false" />
-                <element signature="e#2911#2996#0" expanded="false" />
-                <element signature="e#3012#3159#0" expanded="false" />
-                <element signature="e#3176#3323#0" expanded="false" />
-                <element signature="e#3345#3855#0" expanded="false" />
-                <element signature="e#3870#4003#0" expanded="false" />
+                <element signature="e#1450#3265#0" expanded="false" />
+                <element signature="e#1540#1684#0" expanded="false" />
+                <element signature="e#1696#2272#0" expanded="false" />
+                <element signature="e#2286#2682#0" expanded="false" />
+                <element signature="e#2695#3263#0" expanded="false" />
+                <element signature="e#3375#3882#0" expanded="false" />
+                <element signature="e#3464#3549#0" expanded="false" />
+                <element signature="e#3565#3712#0" expanded="false" />
+                <element signature="e#3729#3876#0" expanded="false" />
+                <element signature="e#3898#4408#0" expanded="false" />
+                <element signature="e#4423#4556#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -118,11 +118,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dockCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dockCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/dockCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5965812" vertical-offset="25" max-vertical-offset="1241">
-              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="1241">
+              <caret line="8" column="31" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -138,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/css/dockControl.less" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/templates/content.tmpl.html" />
         <option value="$PROJECT_DIR$/src/js/resourcePathService.js" />
@@ -147,6 +146,7 @@
         <option value="$PROJECT_DIR$/src/js/dockDirective.js" />
         <option value="$PROJECT_DIR$/src/js/panelCtrl.js" />
         <option value="$PROJECT_DIR$/src/js/dockCtrl.js" />
+        <option value="$PROJECT_DIR$/src/css/dockControl.less" />
       </list>
     </option>
   </component>
@@ -295,24 +295,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DockControl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DockControl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -362,6 +344,8 @@
     <property name="options.searchVisible" value="true" />
     <property name="FullScreen" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js.buildTools.gulp.node_interpreter" value="C:\Program Files\nodejs\node.exe" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="C:\Users\gmeszaros\AppData\Roaming\npm\node_modules\gulp" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -376,7 +360,7 @@
       <recent name="C:\Users\gmeszaros\Documents\GitHub\DockControl\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.Gulp Build">
+  <component name="RunManager" selected="Gulp.js.Gulp Build">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
@@ -406,6 +390,21 @@
       <option name="filePath" />
       <method />
     </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="false" name="Gulp Build" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>build</task>
+      </tasks>
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <RunnerSettings RunnerId="Js.BuildTools.Gulp" />
+      <ConfigurationWrapper RunnerId="Js.BuildTools.Gulp" />
+      <method />
+    </configuration>
     <configuration default="false" name="DebugConfig" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:63342/DockControl/index.html">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -418,9 +417,10 @@
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.DebugConfig" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.Gulp Build" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Gulp.js.Gulp Build" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.DebugConfig" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.Gulp Build" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -551,17 +551,17 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="714">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <element signature="e#897#2712#0" expanded="false" />
-            <element signature="e#987#1131#0" expanded="false" />
-            <element signature="e#1143#1719#0" expanded="false" />
-            <element signature="e#1733#2129#0" expanded="false" />
-            <element signature="e#2142#2710#0" expanded="false" />
-            <element signature="e#2822#3329#0" expanded="false" />
-            <element signature="e#2911#2996#0" expanded="false" />
-            <element signature="e#3012#3159#0" expanded="false" />
-            <element signature="e#3176#3323#0" expanded="false" />
-            <element signature="e#3345#3855#0" expanded="false" />
-            <element signature="e#3870#4003#0" expanded="false" />
+            <element signature="e#1450#3265#0" expanded="false" />
+            <element signature="e#1540#1684#0" expanded="false" />
+            <element signature="e#1696#2272#0" expanded="false" />
+            <element signature="e#2286#2682#0" expanded="false" />
+            <element signature="e#2695#3263#0" expanded="false" />
+            <element signature="e#3375#3882#0" expanded="false" />
+            <element signature="e#3464#3549#0" expanded="false" />
+            <element signature="e#3565#3712#0" expanded="false" />
+            <element signature="e#3729#3876#0" expanded="false" />
+            <element signature="e#3898#4408#0" expanded="false" />
+            <element signature="e#4423#4556#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -626,17 +626,17 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1683">
           <caret line="59" column="25" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="25" />
           <folding>
-            <element signature="e#897#2712#0" expanded="false" />
-            <element signature="e#987#1131#0" expanded="false" />
-            <element signature="e#1143#1719#0" expanded="false" />
-            <element signature="e#1733#2129#0" expanded="false" />
-            <element signature="e#2142#2710#0" expanded="false" />
-            <element signature="e#2822#3329#0" expanded="false" />
-            <element signature="e#2911#2996#0" expanded="false" />
-            <element signature="e#3012#3159#0" expanded="false" />
-            <element signature="e#3176#3323#0" expanded="false" />
-            <element signature="e#3345#3855#0" expanded="false" />
-            <element signature="e#3870#4003#0" expanded="false" />
+            <element signature="e#1450#3265#0" expanded="false" />
+            <element signature="e#1540#1684#0" expanded="false" />
+            <element signature="e#1696#2272#0" expanded="false" />
+            <element signature="e#2286#2682#0" expanded="false" />
+            <element signature="e#2695#3263#0" expanded="false" />
+            <element signature="e#3375#3882#0" expanded="false" />
+            <element signature="e#3464#3549#0" expanded="false" />
+            <element signature="e#3565#3712#0" expanded="false" />
+            <element signature="e#3729#3876#0" expanded="false" />
+            <element signature="e#3898#4408#0" expanded="false" />
+            <element signature="e#4423#4556#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,17 +701,17 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="1598" max-vertical-offset="1734">
           <caret line="94" column="17" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
           <folding>
-            <element signature="e#897#2712#0" expanded="false" />
-            <element signature="e#987#1131#0" expanded="false" />
-            <element signature="e#1143#1719#0" expanded="false" />
-            <element signature="e#1733#2129#0" expanded="false" />
-            <element signature="e#2142#2710#0" expanded="false" />
-            <element signature="e#2822#3329#0" expanded="false" />
-            <element signature="e#2911#2996#0" expanded="false" />
-            <element signature="e#3012#3159#0" expanded="false" />
-            <element signature="e#3176#3323#0" expanded="false" />
-            <element signature="e#3345#3855#0" expanded="false" />
-            <element signature="e#3870#4003#0" expanded="false" />
+            <element signature="e#1450#3265#0" expanded="false" />
+            <element signature="e#1540#1684#0" expanded="false" />
+            <element signature="e#1696#2272#0" expanded="false" />
+            <element signature="e#2286#2682#0" expanded="false" />
+            <element signature="e#2695#3263#0" expanded="false" />
+            <element signature="e#3375#3882#0" expanded="false" />
+            <element signature="e#3464#3549#0" expanded="false" />
+            <element signature="e#3565#3712#0" expanded="false" />
+            <element signature="e#3729#3876#0" expanded="false" />
+            <element signature="e#3898#4408#0" expanded="false" />
+            <element signature="e#4423#4556#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -839,26 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/dockControl.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.73077" vertical-offset="893" max-vertical-offset="2720">
-          <caret line="226" column="21" selection-start-line="226" selection-start-column="21" selection-end-line="226" selection-end-column="21" />
-          <folding>
-            <element signature="e#897#2712#0" expanded="false" />
-            <element signature="e#987#1131#0" expanded="false" />
-            <element signature="e#1143#1719#0" expanded="false" />
-            <element signature="e#1733#2129#0" expanded="false" />
-            <element signature="e#2142#2710#0" expanded="false" />
-            <element signature="e#2822#3329#0" expanded="false" />
-            <element signature="e#2911#2996#0" expanded="false" />
-            <element signature="e#3012#3159#0" expanded="false" />
-            <element signature="e#3176#3323#0" expanded="false" />
-            <element signature="e#3345#3855#0" expanded="false" />
-            <element signature="e#3870#4003#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/resourcePathService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
@@ -927,9 +907,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/dockCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5965812" vertical-offset="25" max-vertical-offset="1241">
-          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="25" max-vertical-offset="1241">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="31" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/dockControl.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4755245" vertical-offset="0" max-vertical-offset="3247">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="e#1450#3265#0" expanded="false" />
+            <element signature="e#1540#1684#0" expanded="false" />
+            <element signature="e#1696#2272#0" expanded="false" />
+            <element signature="e#2286#2682#0" expanded="false" />
+            <element signature="e#2695#3263#0" expanded="false" />
+            <element signature="e#3375#3882#0" expanded="false" />
+            <element signature="e#3464#3549#0" expanded="false" />
+            <element signature="e#3565#3712#0" expanded="false" />
+            <element signature="e#3729#3876#0" expanded="false" />
+            <element signature="e#3898#4408#0" expanded="false" />
+            <element signature="e#4423#4556#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
